@@ -16,7 +16,7 @@ Columns: **Learned** = date I studied it · **Lab** = built in this repo · **No
 | 6 | CAP theorem and consistency | 2026-10-07 | [x] | [ ] |
 | 7 | Sharding and replication | 2026-10-09 | [ ] | [ ] |
 | 8 | Rate limiting | 2026-10-09 | [x] | [ ] |
-| 9 | API design: REST, gRPC, streaming | 2026-10-10 | [ ] | [ ] |
+| 9 | API design: REST, gRPC, streaming | 2026-10-10 | [x] | [ ] |
 
 ## 2. ML and LLM fundamentals (7/7)
 
