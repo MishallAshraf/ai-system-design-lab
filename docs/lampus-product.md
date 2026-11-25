@@ -30,7 +30,7 @@ Lampus is a bilingual (English and Urdu / Roman Urdu) AI tutoring platform for s
 
 ## Where the code lives
 
-Lampus is built on my bot-builder engine, [agentic-rag-langgraph](https://github.com/MishallAshraf/agentic-rag-langgraph) (agents, RAG, guardrails, sign-in, quotas, evals, API, frontend). The engine stays a general bot builder; Lampus is its first real product. Both live in that repo in two folders (planned):
+Lampus is built on my bot-builder engine, [agentic-rag-langgraph](https://github.com/MishallAshraf/agentic-rag-langgraph) (agents, RAG, guardrails, sign-in, quotas, evals, API, frontend). The engine stays a general bot builder; Lampus is its first real product. Both live in that repo in two folders:
 
 - `engine/`: the bot builder
 - `lampus/`: tutoring features the builder can't make (hint-not-answer checks, grading, mastery, dashboards, reports, Urdu) and the tutor bots
