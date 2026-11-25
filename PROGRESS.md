@@ -37,7 +37,7 @@ Columns: **Learned** = date I studied it · **Lab** = built in this repo · **No
 | 17 | Batch vs streaming pipelines | 2026-10-25 | [ ] | [ ] |
 | 18 | Document ingestion: parsing PDFs, tables, OCR | 2026-10-28 | [ ] | [ ] |
 | 19 | Data quality, labeling, curation | 2026-10-29 | [ ] | [ ] |
-| 20 | Vector databases and ANN indexes (HNSW, IVF) | 2026-10-30 | [ ] | [ ] |
+| 20 | Vector databases and ANN indexes (HNSW, IVF) | 2026-10-30 | [x] | [ ] |
 | 21 | Feature stores | 2026-10-31 | [ ] | [ ] |
 | 22 | Data versioning and lineage | 2026-11-02 | [ ] | [ ] |
 | 23 | Synthetic data generation | 2026-11-04 | [ ] | [ ] |

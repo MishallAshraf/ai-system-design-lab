@@ -41,6 +41,7 @@ Measured numbers from each lab will appear here as they're built.
 | --- | --- | --- |
 | 4 SQL vs NoSQL, 6 Consistency | Sign-in failures with 10 students at once, after moving users, quotas and the audit log from one shared SQLite connection to Postgres with a connection pool and atomic quota/audit writes ([Lampus Phase 1, Step 3](https://github.com/MishallAshraf/agentic-rag-langgraph/blob/phase-1/docs/adr/0025-postgres-for-users-quotas-and-audit.md)) | 90% → 0%; 50 students: 150 of 150 turns completed |
 | 4 SQL vs NoSQL | Saving conversation state with 50 conversations at once, after moving LangGraph checkpoints from SQLite (one locked connection) to Postgres with a pool ([Lampus Phase 1, Step 4](https://github.com/MishallAshraf/agentic-rag-langgraph/blob/phase-1/docs/adr/0026-conversations-in-postgres.md)) | One turn's saving 550 ms → 367 ms (p50); 467 → 692 operations/s |
+| 20 Vector databases and ANN indexes | Vector search on the real bots after moving chunks from Chroma to Postgres with pgvector; then HNSW vs exact search on 50,000 synthetic chunks over 50 bots ([Lampus Phase 1, Step 5](https://github.com/MishallAshraf/agentic-rag-langgraph/blob/phase-1/docs/adr/0027-pgvector-as-vector-store.md)) | 2.81 ms → 2.15 ms (p50), same top 10; HNSW filtered to one bot returned 0.7 of 10 results, so search stays exact per bot |
 
 ## Repo layout
 
