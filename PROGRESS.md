@@ -11,9 +11,9 @@ Columns: **Learned** = date I studied it · **Lab** = built in this repo · **No
 | 1 | Scalability: vertical vs horizontal | 2026-10 | [ ] | [ ] |
 | 2 | Load balancing | 2026-10 | [ ] | [ ] |
 | 3 | Caching strategies | 2026-10 | [ ] | [ ] |
-| 4 | SQL vs NoSQL | 2026-10 | [ ] | [ ] |
+| 4 | SQL vs NoSQL | 2026-10 | [x] | [ ] |
 | 5 | Message queues and pub/sub | 2026-10 | [ ] | [ ] |
-| 6 | CAP theorem and consistency | 2026-10-07 | [ ] | [ ] |
+| 6 | CAP theorem and consistency | 2026-10-07 | [x] | [ ] |
 | 7 | Sharding and replication | 2026-10-09 | [ ] | [ ] |
 | 8 | Rate limiting | 2026-10-09 | [ ] | [ ] |
 | 9 | API design: REST, gRPC, streaming | 2026-10-10 | [ ] | [ ] |

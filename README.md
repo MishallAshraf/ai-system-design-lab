@@ -39,7 +39,7 @@ Measured numbers from each lab will appear here as they're built.
 
 | Topic | What I measured | Result |
 | --- | --- | --- |
-| | | |
+| 4 SQL vs NoSQL, 6 Consistency | Sign-in failures with 10 students at once, after moving users, quotas and the audit log from one shared SQLite connection to Postgres with a connection pool and atomic quota/audit writes ([Lampus Phase 1, Step 3](https://github.com/MishallAshraf/agentic-rag-langgraph/blob/phase-1/docs/adr/0025-postgres-for-users-quotas-and-audit.md)) | 90% → 0%; 50 students: 150 of 150 turns completed |
 
 ## Repo layout
 
