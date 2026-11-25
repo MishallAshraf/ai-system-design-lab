@@ -40,6 +40,7 @@ Measured numbers from each lab will appear here as they're built.
 | Topic | What I measured | Result |
 | --- | --- | --- |
 | 4 SQL vs NoSQL, 6 Consistency | Sign-in failures with 10 students at once, after moving users, quotas and the audit log from one shared SQLite connection to Postgres with a connection pool and atomic quota/audit writes ([Lampus Phase 1, Step 3](https://github.com/MishallAshraf/agentic-rag-langgraph/blob/phase-1/docs/adr/0025-postgres-for-users-quotas-and-audit.md)) | 90% → 0%; 50 students: 150 of 150 turns completed |
+| 4 SQL vs NoSQL | Saving conversation state with 50 conversations at once, after moving LangGraph checkpoints from SQLite (one locked connection) to Postgres with a pool ([Lampus Phase 1, Step 4](https://github.com/MishallAshraf/agentic-rag-langgraph/blob/phase-1/docs/adr/0026-conversations-in-postgres.md)) | One turn's saving 550 ms → 367 ms (p50); 467 → 692 operations/s |
 
 ## Repo layout
 
