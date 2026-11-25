@@ -4,8 +4,8 @@ description: Teach the next course topic with a practical example and a hands-on
 
 Read `PROGRESS.md` and find the next topic (the first one not yet learned, or the one marked **next**). If I passed a topic name in $ARGUMENTS, teach that one instead.
 
-Teach it following "How to teach me" in `CLAUDE.md`: simple explanation, how it works and its trade-offs, what goes wrong, a practical Ustaad example with labeled illustrative numbers, "In one sentence", then a **Lab** with:
-- the goal and how it fits Ustaad (see `docs/ustaad-product.md`)
+Teach it following "How to teach me" in `CLAUDE.md`: simple explanation, how it works and its trade-offs, what goes wrong, a practical Lampus example with labeled illustrative numbers, "In one sentence", then a **Lab** with:
+- the goal and how it fits Lampus (see `docs/lampus-product.md`)
 - the files to create or change in this repo
 - step-by-step instructions sized for 45–90 minutes, runnable in Codespaces or a free Colab/Kaggle GPU
 - "Done when" criteria

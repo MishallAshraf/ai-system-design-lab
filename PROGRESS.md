@@ -1,6 +1,6 @@
 # Course progress
 
-33 of 72 topics learned. Labs for topics 1–33 are being backfilled through the milestones in `docs/ustaad-product.md`.
+33 of 72 topics learned. Labs for topics 1–33 are being backfilled through the milestones in `docs/lampus-product.md`.
 
 Columns: **Learned** = date I studied it · **Lab** = built in this repo · **Note** = one-page note written.
 

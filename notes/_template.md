@@ -13,7 +13,7 @@ The core idea, maybe a small diagram.
 
 ## Trade-offs and what goes wrong
 
-## In Ustaad
+## In Lampus
 Where this topic shows up in the product, and the lab that built it.
 
 ## What I measured

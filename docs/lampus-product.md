@@ -1,6 +1,10 @@
-# Ustaad: product plan
+# Lampus: product plan
 
-Ustaad is a bilingual (English and Urdu / Roman Urdu) AI tutoring platform for schools and private tutors. It's the product I build to practice every topic in the course, piloted with my own tutoring students.
+Lampus is a bilingual (English and Urdu / Roman Urdu) AI tutoring platform for schools and private tutors. It's the product I build to practice every topic in the course, piloted with my own tutoring students.
+
+## The name
+
+*Lampas* is the ancient Greek word for torch: in Athenian torch relays, runners passed the flame hand to hand, an old image for passing knowledge between generations. In Homer's *Odyssey*, Lampus is one of the two horses that pull the chariot of Dawn. The product's founder, Mishal, has a name that means "torch." Lampus lights the next step for a student instead of doing the work for them. Tagline: *Pass the light.*
 
 ## What it does
 
@@ -11,7 +15,7 @@ Ustaad is a bilingual (English and Urdu / Roman Urdu) AI tutoring platform for s
 
 ## Topic-to-feature map
 
-| Branch | Where it shows up in Ustaad |
+| Branch | Where it shows up in Lampus |
 | --- | --- |
 | Foundations | Autoscaling for exam-season spikes; load balancing; caching common explanations; SQL for users, grades, billing and NoSQL for transcripts and events; a queue for homework grading and pub/sub for "attempt submitted" events; strong consistency for grades and payments, eventual for leaderboards; sharding by school; rate limits per student and school; REST public API, gRPC internally, streamed tutor replies, webhooks to school systems |
 | ML and LLM fundamentals | Prefill vs decode planning for textbook context; embeddings for concepts and questions; KV memory sizing; token budgets per session (Urdu costs more tokens); thinking budgets only for hard math; API models for hard problems, a self-hosted small model for children's data; handwritten-homework photos and voice |

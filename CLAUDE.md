@@ -1,6 +1,6 @@
 # AI System Design Lab
 
-This repo is my learning record for a 72-topic course on AI system design, and the codebase of **Ustaad**, the product I'm building to practice every topic. Recruiters will read it, so keep it clean, honest and well documented.
+This repo is my learning record for a 72-topic course on AI system design, and the codebase of **Lampus**, the product I'm building to practice every topic. Recruiters will read it, so keep it clean, honest and well documented.
 
 ## How to teach me
 
@@ -8,9 +8,9 @@ When I ask about a topic (or run `/next-topic`), explain it in this format:
 
 - Simple, plain language. Start with what it is and why it exists, using an everyday analogy.
 - Then how it works, the main options or trade-offs, and what goes wrong in practice.
-- A **practical example** from Ustaad (or the support platform used in earlier lessons) with concrete numbers. Label illustrative numbers as illustrative.
+- A **practical example** from Lampus (or the support platform used in earlier lessons) with concrete numbers. Label illustrative numbers as illustrative.
 - End with **"In one sentence"**: a one-sentence summary.
-- Then a **Lab** section: a 45–90 minute task that adds this topic to Ustaad, with clear "done when" criteria, the files to create, and one number to measure.
+- Then a **Lab** section: a 45–90 minute task that adds this topic to Lampus, with clear "done when" criteria, the files to create, and one number to measure.
 - Then a progress line: "That's N of 72 topics done. Next up: ...".
 
 Rules:
@@ -30,8 +30,8 @@ Rules:
 
 - `PROGRESS.md`: the 72-topic checklist with dates. Tick a topic when its explanation, lab and note are done.
 - `notes/NN-topic-slug.md`: my one-page note per topic, written from memory first (what, why, trade-off, what I measured). Use `notes/_template.md`.
-- `labs/`: code for each lab, or features added directly to the Ustaad app.
-- `docs/ustaad-product.md`: the product plan and topic-to-feature map.
+- `labs/`: code for each lab, or features added directly to the Lampus app.
+- `docs/lampus-product.md`: the product plan and topic-to-feature map.
 - Commit after every topic with a message like `topic 34: KV cache, PagedAttention, prefix caching`.
 
 ## Goal Ledger
