@@ -1,6 +1,6 @@
 # Course progress
 
-33 of 72 topics learned. Topics 1–33 were learned in course order; the remaining topics are learned in **product order**, each just before the Lampus build phase that uses it (see "Build phases" and "Learning order" in `docs/lampus-product.md`). Labs for topics 1–33 are backfilled inside those phases.
+34 of 72 topics learned. Topics 1–33 were learned in course order; the remaining topics are learned in **product order**, each just before the Lampus build phase that uses it (see "Build phases" and "Learning order" in `docs/lampus-product.md`). Labs for topics 1–33 are backfilled inside those phases.
 
 Columns: **Learned** = date I studied it · **Lab** = built in this repo · **Note** = one-page note written.
 
@@ -39,7 +39,7 @@ Columns: **Learned** = date I studied it · **Lab** = built in this repo · **No
 | 19 | Data quality, labeling, curation | 2026-10-29 | [ ] | [ ] |
 | 20 | Vector databases and ANN indexes (HNSW, IVF) | 2026-10-30 | [x] | [ ] |
 | 21 | Feature stores | 2026-10-31 | [ ] | [ ] |
-| 22 | Data versioning and lineage | 2026-11-02 | [ ] | [ ] |
+| 22 | Data versioning and lineage | 2026-11-02 | [x] | [ ] |
 | 23 | Synthetic data generation | 2026-11-04 | [ ] | [ ] |
 
 ## 4. Training and adaptation (7/7)
@@ -67,12 +67,12 @@ Columns: **Learned** = date I studied it · **Lab** = built in this repo · **No
 | 37 | Speculative decoding | | [ ] | [ ] |
 | 38 | Model routing, cascades, GPU autoscaling | | [ ] | [ ] |
 
-## 6. LLM application patterns (0/8)
+## 6. LLM application patterns (1/8)
 
 | # | Topic | Learned | Lab | Note |
 | --- | --- | --- | --- | --- |
-| 39 | Context engineering | **next** | [ ] | [ ] |
-| 40 | Structured outputs and JSON schemas | | [ ] | [ ] |
+| 39 | Context engineering | 2026-11-25 | [ ] | [ ] |
+| 40 | Structured outputs and JSON schemas | **next** | [ ] | [ ] |
 | 41 | RAG: chunking, hybrid search, reranking | | [ ] | [ ] |
 | 42 | Agentic RAG and GraphRAG | | [ ] | [ ] |
 | 43 | Tool use and MCP | | [ ] | [ ] |
