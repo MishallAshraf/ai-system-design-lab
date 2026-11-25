@@ -1,6 +1,10 @@
 # AI System Design Lab
 
-This repo is my learning record for a 72-topic course on AI system design, and the codebase of **Lampus**, the product I'm building to practice every topic. Recruiters will read it, so keep it clean, honest and well documented.
+This repo is my learning record for a 72-topic course on AI system design. I practice every topic by building **Lampus**, a tutoring product I want to take to production. Lampus's code lives in my bot-builder repo, agentic-rag-langgraph (locally `D:\Work\RAG`), in two folders: `engine/` (the bot builder) and `lampus/` (the tutoring product). This repo keeps the course record and labs for topics that don't fit in a product. Recruiters will read both, so keep them clean, honest and well documented.
+
+## Learning order
+
+Topics 1–33 were learned in course order. The rest are learned in **product order**: the order in `docs/lampus-product.md` ("Learning order"), each topic just before the build phase that uses it. Labs should apply the topic to the real Lampus product where possible, measuring one number before and after the change.
 
 ## How to teach me
 
@@ -30,7 +34,7 @@ Rules:
 
 - `PROGRESS.md`: the 72-topic checklist with dates. Tick a topic when its explanation, lab and note are done.
 - `notes/NN-topic-slug.md`: my one-page note per topic, written from memory first (what, why, trade-off, what I measured). Use `notes/_template.md`.
-- `labs/`: code for each lab, or features added directly to the Lampus app.
+- `labs/`: labs that don't belong in the product (training experiments, benchmarks, design write-ups). Product features go into the Lampus repo, with the PR linked from `PROGRESS.md`.
 - `docs/lampus-product.md`: the product plan and topic-to-feature map.
 - Commit after every topic with a message like `topic 34: KV cache, PagedAttention, prefix caching`.
 

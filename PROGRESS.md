@@ -1,6 +1,6 @@
 # Course progress
 
-33 of 72 topics learned. Labs for topics 1–33 are being backfilled through the milestones in `docs/lampus-product.md`.
+33 of 72 topics learned. Topics 1–33 were learned in course order; the remaining topics are learned in **product order**, each just before the Lampus build phase that uses it (see "Build phases" and "Learning order" in `docs/lampus-product.md`). Labs for topics 1–33 are backfilled inside those phases.
 
 Columns: **Learned** = date I studied it · **Lab** = built in this repo · **Note** = one-page note written.
 
@@ -61,7 +61,7 @@ Columns: **Learned** = date I studied it · **Lab** = built in this repo · **No
 | 31 | Serving engines: vLLM, SGLang, TensorRT-LLM | 2026-11-18 | [ ] | [ ] |
 | 32 | Online, batch and streaming inference, TTFT | 2026-11-21 | [ ] | [ ] |
 | 33 | Continuous batching | 2026-11-23 | [ ] | [ ] |
-| 34 | KV cache, PagedAttention, prefix caching | **next** | [ ] | [ ] |
+| 34 | KV cache, PagedAttention, prefix caching | | [ ] | [ ] |
 | 35 | Quantization: FP8, INT4, AWQ | | [ ] | [ ] |
 | 36 | Prefill/decode disaggregation | | [ ] | [ ] |
 | 37 | Speculative decoding | | [ ] | [ ] |
@@ -71,7 +71,7 @@ Columns: **Learned** = date I studied it · **Lab** = built in this repo · **No
 
 | # | Topic | Learned | Lab | Note |
 | --- | --- | --- | --- | --- |
-| 39 | Context engineering | | [ ] | [ ] |
+| 39 | Context engineering | **next** | [ ] | [ ] |
 | 40 | Structured outputs and JSON schemas | | [ ] | [ ] |
 | 41 | RAG: chunking, hybrid search, reranking | | [ ] | [ ] |
 | 42 | Agentic RAG and GraphRAG | | [ ] | [ ] |

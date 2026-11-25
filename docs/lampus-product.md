@@ -1,6 +1,6 @@
 # Lampus: product plan
 
-Lampus is a bilingual (English and Urdu / Roman Urdu) AI tutoring platform for schools and private tutors. It's the product I build to practice every topic in the course, piloted with my own tutoring students.
+Lampus is a bilingual (English and Urdu / Roman Urdu) AI tutoring platform for schools and private tutors. It's the product I build to practice every topic in the course, piloted with my own tutoring students, and the goal is to take it to production.
 
 ## The name
 
@@ -28,24 +28,35 @@ Lampus is a bilingual (English and Urdu / Roman Urdu) AI tutoring platform for s
 | Safety, privacy and governance | Protecting minors' data and class-level access control; age-appropriate guardrails, no answers during tests, distress escalation to a counselor; defending against prompt injection in chat and uploads; agents need teacher approval to contact parents; red teaming; audit logs of grading decisions (education is high-risk under the EU AI Act) |
 | Case studies | Parent/teacher help desk; next-best-exercise recommender; school-wide search; programming track with a code-running tutor; the internal model platform; payment fraud, account sharing and cheating detection; project research assistant with citations |
 
-## Build phases
+## Where the code lives
 
-1. **MVP** (Foundations, LLM fundamentals): one school, API-based tutor with RAG over one textbook, login, streaming, rate limits. Pilot with 3–5 of my students.
-2. **Grading and data** (Data layer, first evals): ingestion with OCR, rubric grading, a golden set from my own marking.
-3. **Personalization:** mastery features, recommender, concept graph.
-4. **Own models** (Training, Inference): fine-tune and distill a small tutor, self-host with multi-adapter serving, route between it and API models.
-5. **Agents and teacher tools:** lesson planner, research assistant, Classroom integration.
-6. **Production hardening:** safety and red teaming, quotas, cost tracking, monitoring, fallbacks, audit trail.
+Lampus is built on my bot-builder engine, [agentic-rag-langgraph](https://github.com/MishallAshraf/agentic-rag-langgraph) (agents, RAG, guardrails, sign-in, quotas, evals, API, frontend). The engine stays a general bot builder; Lampus is its first real product. Both live in that repo in two folders (planned):
 
-## Backfill milestones for topics 1–33
+- `engine/`: the bot builder
+- `lampus/`: tutoring features the builder can't make (hint-not-answer checks, grading, mastery, dashboards, reports, Urdu) and the tutor bots
 
-| Milestone | Build | Topics |
+This repo (`ai-system-design-lab`) stays the course record: progress, notes, and labs for topics that don't belong in a product (for example GRPO or FSDP). Every topic links to the product PR where it was applied, with a number measured before and after the change.
+
+## Build phases (product order)
+
+Lampus is built in the order a real product needs things, not in course order. Each remaining topic is learned just before the phase that uses it. Topics in **bold** are not learned yet.
+
+| Phase | What gets built | Topics |
 | --- | --- | --- |
-| M1 Platform core | FastAPI chat API with streaming, Postgres, Redis cache, token-bucket rate limiter, queue worker, Docker Compose, a load test | 1–9 |
-| M2 LLM layer | Token cost calculator, context budget manager, embeddings search, small/large router, thinking-budget switch | 10–16 |
-| M3 Knowledge pipeline | PDF and table ingestion with OCR, chunk and embed into pgvector, HNSW vs exact recall benchmark, data quality checks, dataset versioning, simulated students | 17–23 |
-| M4 Model lab | MLflow tracking, GPU memory calculator, QLoRA fine-tune, small DPO run, toy GRPO on math, distillation, 2-GPU FSDP on Kaggle | 24–30 |
-| M5 Serving | Engine benchmark on a rented GPU, TTFT and throughput measurements, continuous batching experiment | 31–33 |
+| 1. Solid foundations | Engine runs on Linux and in Codespaces; Postgres + pgvector instead of Chroma/SQLite; Redis cache; queue worker; Docker Compose; CI; a load test | 1–9, 20, 22 |
+| 2. Tutor MVP | A tutor bot over one OpenStax textbook with page citations, Urdu-aware token budgets, thinking only for hard math, hints instead of answers | 10, 11, 13, 14, 15, 18, **39, 40, 41, 61** |
+| 3. Safe to pilot | Golden set I mark myself, LLM grader calibrated against my marks, tracing, eval gate in CI, parental consent, data deletion, no personal data in logs | **47, 48, 49, 52, 60** |
+| Pilot | 3–5 of my tutoring students | |
+| 4. Grading and personalization | Photographed homework grading, mastery tracking, next-exercise recommender, A/B tests of hint styles, drift monitoring | 16, 17, 19, 21, 23, **50, 53, 67** |
+| 5. Own models | Fine-tune and distill a small tutor, self-host it with one adapter per subject, route between it and API models | 12, 24–33, **34, 35, 36, 37, 38, 70** |
+| 6. Agents and teacher tools | Lesson planner, MCP tools and Google Classroom, learning memory, research assistant, parent/teacher help desk, school-wide search, programming track | **42, 43, 44, 45, 46, 51, 66, 68, 69, 72** |
+| 7. Scale and hardening | Latency budgets, fallbacks, caching, cost per student, quotas per school, graceful degradation, injection defense, agent permissions, red teaming, audit trail, cheating detection | **54–59, 62–65, 71** |
+
+Topics 1–33 were learned in course order before this plan; they are backfilled inside the phase that uses them. Parts that can't run in the product (2-GPU FSDP, disaggregation, serving benchmarks on a rented GPU) become labs or design write-ups in this repo, labeled honestly.
+
+## Learning order for the remaining topics
+
+39 → 40 → 41 → 61 → 47 → 48 → 49 → 52 → 60 → 50 → 53 → 67 → 34 → 35 → 36 → 37 → 38 → 70 → 43 → 44 → 42 → 45 → 46 → 51 → 66 → 68 → 69 → 72 → 54 → 55 → 56 → 57 → 58 → 59 → 62 → 63 → 64 → 65 → 71
 
 ## Data plan
 
