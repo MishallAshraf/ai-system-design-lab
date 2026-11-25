@@ -8,8 +8,8 @@ Columns: **Learned** = date I studied it · **Lab** = built in this repo · **No
 
 | # | Topic | Learned | Lab | Note |
 | --- | --- | --- | --- | --- |
-| 1 | Scalability: vertical vs horizontal | 2026-10 | [ ] | [ ] |
-| 2 | Load balancing | 2026-10 | [ ] | [ ] |
+| 1 | Scalability: vertical vs horizontal | 2026-10 | [x] | [ ] |
+| 2 | Load balancing | 2026-10 | [x] | [ ] |
 | 3 | Caching strategies | 2026-10 | [x] | [ ] |
 | 4 | SQL vs NoSQL | 2026-10 | [x] | [ ] |
 | 5 | Message queues and pub/sub | 2026-10 | [x] | [ ] |
