@@ -1,6 +1,6 @@
 # Course progress
 
-34 of 72 topics learned. Topics 1–33 were learned in course order; the remaining topics are learned in **product order**, each just before the Lampus build phase that uses it (see "Build phases" and "Learning order" in `docs/lampus-product.md`). Labs for topics 1–33 are backfilled inside those phases.
+37 of 72 topics learned. Topics 1–33 were learned in course order; the remaining topics are learned in **product order**, each just before the Lampus build phase that uses it (see "Build phases" and "Learning order" in `docs/lampus-product.md`). Labs for topics 1–33 are backfilled inside those phases.
 
 Columns: **Learned** = date I studied it · **Lab** = built in this repo · **Note** = one-page note written.
 
@@ -14,7 +14,7 @@ Columns: **Learned** = date I studied it · **Lab** = built in this repo · **No
 | 4 | SQL vs NoSQL | 2026-10 | [x] | [ ] |
 | 5 | Message queues and pub/sub | 2026-10 | [x] | [ ] |
 | 6 | CAP theorem and consistency | 2026-10-07 | [x] | [ ] |
-| 7 | Sharding and replication | 2026-10-09 | [ ] | [ ] |
+| 7 | Sharding and replication | 2026-10-09 | [x] | [ ] |
 | 8 | Rate limiting | 2026-10-09 | [x] | [ ] |
 | 9 | API design: REST, gRPC, streaming | 2026-10-10 | [x] | [ ] |
 
@@ -35,7 +35,7 @@ Columns: **Learned** = date I studied it · **Lab** = built in this repo · **No
 | # | Topic | Learned | Lab | Note |
 | --- | --- | --- | --- | --- |
 | 17 | Batch vs streaming pipelines | 2026-10-25 | [ ] | [ ] |
-| 18 | Document ingestion: parsing PDFs, tables, OCR | 2026-10-28 | [ ] | [ ] |
+| 18 | Document ingestion: parsing PDFs, tables, OCR | 2026-10-28 | [x] | [ ] |
 | 19 | Data quality, labeling, curation | 2026-10-29 | [ ] | [ ] |
 | 20 | Vector databases and ANN indexes (HNSW, IVF) | 2026-10-30 | [x] | [ ] |
 | 21 | Feature stores | 2026-10-31 | [ ] | [ ] |
@@ -67,13 +67,13 @@ Columns: **Learned** = date I studied it · **Lab** = built in this repo · **No
 | 37 | Speculative decoding | | [ ] | [ ] |
 | 38 | Model routing, cascades, GPU autoscaling | | [ ] | [ ] |
 
-## 6. LLM application patterns (1/8)
+## 6. LLM application patterns (3/8)
 
 | # | Topic | Learned | Lab | Note |
 | --- | --- | --- | --- | --- |
 | 39 | Context engineering | 2026-11-25 | [ ] | [ ] |
-| 40 | Structured outputs and JSON schemas | **next** | [ ] | [ ] |
-| 41 | RAG: chunking, hybrid search, reranking | | [ ] | [ ] |
+| 40 | Structured outputs and JSON schemas | 2026-11-26 | [ ] | [ ] |
+| 41 | RAG: chunking, hybrid search, reranking | 2026-11-26 | [x] | [ ] |
 | 42 | Agentic RAG and GraphRAG | | [ ] | [ ] |
 | 43 | Tool use and MCP | | [ ] | [ ] |
 | 44 | Agent architectures and harnesses | | [ ] | [ ] |
@@ -84,7 +84,7 @@ Columns: **Learned** = date I studied it · **Lab** = built in this repo · **No
 
 | # | Topic | Learned | Lab | Note |
 | --- | --- | --- | --- | --- |
-| 47 | Golden datasets and offline evals | | [ ] | [ ] |
+| 47 | Golden datasets and offline evals | **next** | [ ] | [ ] |
 | 48 | LLM-as-judge, calibrated against humans | | [ ] | [ ] |
 | 49 | Tracing with OpenTelemetry | | [ ] | [ ] |
 | 50 | Online evals and A/B tests on live traces | | [ ] | [ ] |
@@ -103,12 +103,12 @@ Columns: **Learned** = date I studied it · **Lab** = built in this repo · **No
 | 58 | Per-tenant token quotas and rate limits | | [ ] | [ ] |
 | 59 | Multi-region and graceful degradation | | [ ] | [ ] |
 
-## 9. Safety, privacy and governance (0/6)
+## 9. Safety, privacy and governance (1/6)
 
 | # | Topic | Learned | Lab | Note |
 | --- | --- | --- | --- | --- |
 | 60 | Data privacy: PII redaction, retrieval access control | | [ ] | [ ] |
-| 61 | Guardrails: deterministic and model-based | | [ ] | [ ] |
+| 61 | Guardrails: deterministic and model-based | 2026-11-26 | [ ] | [ ] |
 | 62 | Prompt injection and tool/MCP security | | [ ] | [ ] |
 | 63 | Agent permissions, sandboxing, human approval | | [ ] | [ ] |
 | 64 | Red teaming | | [ ] | [ ] |

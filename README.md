@@ -6,7 +6,7 @@ Every topic here has three things: working code, a measured result, and a one-pa
 
 ## Progress
 
-**33 of 72 topics learned.** See [PROGRESS.md](PROGRESS.md) for the full checklist with labs and notes.
+**37 of 72 topics learned.** See [PROGRESS.md](PROGRESS.md) for the full checklist with labs and notes.
 
 | Branch | Topics | Learned |
 | --- | --- | --- |
@@ -47,10 +47,13 @@ Measured numbers from each lab will appear here as they're built.
 | 5 Message queues and pub/sub | Whether a bot build survives a crash with two API copies, after moving builds from the API's memory to Postgres plus a Redis Streams queue run by a separate worker, with pub/sub to wake progress pages and announce new bots ([Lampus Phase 1, Step 8](https://github.com/MishallAshraf/agentic-rag-langgraph/blob/phase-1/docs/adr/0030-build-queue-and-worker.md)) | API copy killed mid-build: build lost → finished 11 s later; the worker killed: a second worker took it over and finished it 17 s later |
 | 1 Scaling, 2 Load balancing, 7 Replication | Students answered again after one API copy is killed under load, after putting three copies behind nginx (least connections), adding a Postgres read replica for searches and making conversation locks 15 s with renewal; measuring first found and fixed a hang that stopped one copy for good ([Lampus Phase 1, Step 9](https://github.com/MishallAshraf/agentic-rag-langgraph/blob/phase-1/docs/adr/0031-scale-out-nginx-and-read-replica.md)) | 0 of 20 → 20 of 20 within 20 s; median turn 15.4 s → 7.4 s, throughput unchanged on 2 cores (CPU-bound); searches on the primary 100% → 9% |
 | 9 API design | Duplicate turns when 10 students each resend a message whose reply they lost, and forged or replayed webhooks a school's server accepts, after versioning the API under /v1, adding idempotency keys and signing webhooks (Standard Webhooks, HMAC-SHA256) ([Lampus Phase 1, Step 10](https://github.com/MishallAshraf/agentic-rag-langgraph/blob/phase-1/docs/adr/0032-api-v1-idempotency-and-signed-webhooks.md)) | 10 → 0 duplicate turns (20 → 10 charged); 200 → 0 of 200 attack messages accepted, 50 of 50 genuine delivered through a 3 s outage |
+| 18 Document ingestion, 41 Chunking and reranking | Student questions (30, chapters 4–6 of OpenStax Prealgebra 2e) whose answering printed page is in the top 5, after taking text and math from the book's web pages (the PDF draws all math as vector shapes), printed page numbers from the PDF footers, and cutting chunks by the book's structure with the answer key never searched ([Lampus Phase 2, Step 11](https://github.com/MishallAshraf/agentic-rag-langgraph/blob/phase-2/docs/adr/0033-textbook-ingestion-printed-pages-and-structure.md)) | 0 → 24 of 30 (default rerank), 27 with vector search; 21 with only the page number fixed; answer key in results 5 → 0 of 5 |
+| 7 Sharding | Placing 1,000 synthetic schools (52,658 students) on shards by `school_id`: how uneven the shards are, and how much data moves when a 5th shard joins 4 ([labs/07-sharding-by-school](labs/07-sharding-by-school), design write-up and simulation) | Data moved: hash mod N 75.5%, consistent hashing 25.1%, directory 19.8%; fullest shard at 8 shards 1.62×, 1.43×, 1.00× the average; from 16 shards the biggest school needs splitting |
+| 9 API design | REST/JSON vs gRPC/protobuf for an internal search call returning 5 passages and a 384-float vector, on one laptop ([labs/09-grpc-internal](labs/09-grpc-internal), benchmark and design decision) | 12,382 → 5,679 bytes; p50 3.9 ms → 1.0 ms; 2.9 ms is 0.04% of a 7.4 s turn, so public API stays REST, gRPC waits for a hop that matters |
 
 ## Repo layout
 
-- `labs/` code for each lab
+- `labs/` labs that don't fit in the product: [07-sharding-by-school](labs/07-sharding-by-school) (design and simulation), [09-grpc-internal](labs/09-grpc-internal) (benchmark)
 - `notes/` one-page notes per topic
 - `data/SOURCES.md` every dataset used, with its license
 - `docs/` product plan and design write-ups

@@ -1,0 +1,6 @@
+fastapi==0.165.0
+uvicorn==0.54.0
+httpx==0.28.1
+grpcio==1.85.4
+grpcio-tools==1.85.4
+protobuf==7.36.2

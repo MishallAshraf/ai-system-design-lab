@@ -1,0 +1,26 @@
+// The search service's answer, as Lampus's API would ask for it over gRPC.
+syntax = "proto3";
+
+package lampus.search;
+
+service Search {
+  rpc Find (SearchRequest) returns (SearchResponse);
+}
+
+message SearchRequest {
+  string bot_id = 1;
+  string query = 2;
+  int32 top_k = 3;
+}
+
+message Passage {
+  string chunk_id = 1;
+  string source = 2;
+  string text = 3;
+  float score = 4;
+}
+
+message SearchResponse {
+  repeated Passage passages = 1;
+  repeated float query_vector = 2;  // 384 floats (all-MiniLM-L6-v2 size), packed: 4 bytes each
+}

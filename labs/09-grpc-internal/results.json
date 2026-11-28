@@ -1,0 +1,33 @@
+{
+  "calls_each": 6000,
+  "body_bytes": {
+    "rest_json": 12382,
+    "rest_json_vector_rounded_6dp": 7957,
+    "grpc_protobuf": 5679,
+    "of_which_passage_text": 3875
+  },
+  "vector_bytes": {
+    "json": 8035,
+    "protobuf": 1536
+  },
+  "latency_ms": {
+    "rest": {
+      "p50": 3.905,
+      "p95": 5.264,
+      "p99": 6.511,
+      "calls_per_s": 246
+    },
+    "rest_raw": {
+      "p50": 2.646,
+      "p95": 4.267,
+      "p99": 4.916,
+      "calls_per_s": 348
+    },
+    "grpc": {
+      "p50": 1.008,
+      "p95": 1.393,
+      "p99": 1.601,
+      "calls_per_s": 971
+    }
+  }
+}

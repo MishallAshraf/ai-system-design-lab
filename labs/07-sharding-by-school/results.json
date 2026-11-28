@@ -1,0 +1,36 @@
+{
+  "schools": 1000,
+  "students": 52658,
+  "biggest_school": 3718,
+  "biggest_school_share": 0.071,
+  "strategies": {
+    "hash mod N": {
+      "imbalance_4_shards": 1.24,
+      "imbalance_8_shards": 1.62,
+      "imbalance_16_shards": 2.02,
+      "moved_4_to_5": 0.755,
+      "imbalance_after_adding_5th": 1.24
+    },
+    "consistent hashing": {
+      "imbalance_4_shards": 1.33,
+      "imbalance_8_shards": 1.43,
+      "imbalance_16_shards": 2.54,
+      "moved_4_to_5": 0.251,
+      "imbalance_after_adding_5th": 1.25
+    },
+    "directory": {
+      "imbalance_4_shards": 1.0,
+      "imbalance_8_shards": 1.0,
+      "imbalance_16_shards": 1.13,
+      "moved_4_to_5": 0.198,
+      "imbalance_after_adding_5th": 1.0
+    }
+  },
+  "biggest_school_vs_average_shard": {
+    "4": 0.28,
+    "8": 0.56,
+    "16": 1.13,
+    "32": 2.26,
+    "64": 4.52
+  }
+}
